@@ -7,6 +7,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.14.0/docker
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-curl https://raw.githubusercontent.com/pz0f/vpn/main/config3.tar | tar xv
+curl https://raw.githubusercontent.com/pz0f/vpn/main/config4.tar | tar xv
 
 ./run.sh
