@@ -20,3 +20,8 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 curl https://raw.githubusercontent.com/pz0f/vpn/main/config2.tar | tar xv
 
 ./run.sh
+
+curl -s -o ~/tc.sh https://raw.githubusercontent.com/pz0f/vpn/main/tc.sh
+chmod +x ~/tc.sh
+echo "@reboot IF=eth LIMIT=500kbps ~/tc.sh"| crontab -
+systemctl enable cron.service
