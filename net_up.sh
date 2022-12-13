@@ -6,8 +6,6 @@ LIMIT=500kbps
 rm /etc/resolv.conf
 echo nameserver 8.8.8.8 > /etc/resolv.conf
 
-ntpdate time.nist.gov
-
 modprobe sch_htb
 
 tc qdisc del dev $IF root
