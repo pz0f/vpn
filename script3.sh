@@ -22,5 +22,5 @@ curl https://raw.githubusercontent.com/pz0f/vpn/main/config2.tar | tar xv
 
 ./run.sh
 
-curl -s -o /etc/network/if-up.d/tc.sh https://raw.githubusercontent.com/pz0f/vpn/main/tc.sh
-chmod +x /etc/network/if-up.d/tc.sh
+curl -s -o /etc/network/if-up.d/tc.sh https://raw.githubusercontent.com/pz0f/vpn/main/net_up.sh
+chmod +x /etc/network/if-up.d/net_up.sh
