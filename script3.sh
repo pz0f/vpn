@@ -21,7 +21,5 @@ curl https://raw.githubusercontent.com/pz0f/vpn/main/config2.tar | tar xv
 
 ./run.sh
 
-curl -s -o ~/tc.sh https://raw.githubusercontent.com/pz0f/vpn/main/tc.sh
-chmod +x ~/tc.sh
-echo "@reboot IF=eth0 LIMIT=500kbps ~/tc.sh"| crontab -
-systemctl enable cron.service
+curl -s -o /etc/network/if-up.d/tc.sh https://raw.githubusercontent.com/pz0f/vpn/main/tc.sh
+chmod +x /etc/network/if-up.d/tc.sh
