@@ -3,6 +3,7 @@
 systemctl disable systemd-resolved
 systemctl stop systemd-resolved
 
+rm /etc/resolv.conf
 echo nameserver 8.8.8.8 > /etc/resolv.conf
 
 apt update
