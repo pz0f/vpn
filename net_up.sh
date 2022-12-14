@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IF=eth0
-LIMIT=1mbps
+LIMIT=500kbps
 
 rm /etc/resolv.conf
 echo nameserver 8.8.8.8 > /etc/resolv.conf
