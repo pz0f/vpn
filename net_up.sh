@@ -3,7 +3,7 @@
 IF=eth0
 IF2=$(ip -br -4 a sh | grep 172.18 | awk '{print $1}')
 DOWNLOAD_LIMIT=500kbps
-UPLOAD_LIMIT=500kbp
+UPLOAD_LIMIT=500kbps
 
 rm /etc/resolv.conf
 echo nameserver 8.8.8.8 > /etc/resolv.conf
