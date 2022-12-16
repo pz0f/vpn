@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IF=eth0
-IF2=$(ip -br -4 a sh | grep 172.18.0.1 | awk '{print $1}')
+IF2=$(ip -br -4 a sh | grep 172.18 | awk '{print $1}')
 DOWNLOAD_LIMIT=500kbps
 UPLOAD_LIMIT=500kbp
 
