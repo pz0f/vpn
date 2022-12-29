@@ -18,7 +18,7 @@ curl -L "https://github.com/docker/compose/releases/download/v2.14.1/docker-comp
 chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-curl https://raw.githubusercontent.com/pz0f/vpn/main/config2.tar | tar xv
+curl https://raw.githubusercontent.com/pz0f/vpn/main/backup.tar.gz | tar xvz
 
 ./run.sh
 
